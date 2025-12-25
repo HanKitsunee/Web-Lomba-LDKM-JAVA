@@ -1,0 +1,252 @@
+/* RESET CSS DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+/* BUAT CONTAINER */
+.container {
+    width: 90vw;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  
+  /* START NAVBAR */
+  .navbar {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    
+    /* EFEK GLASS NAVBAR */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%; 
+  }
+  
+  .logo-web {
+    height: 50vh; 
+    width: auto; 
+    max-height: 70px; 
+    min-height: 40px;  
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .logo-web:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+  display: flex;
+    list-style: none;
+    gap: 3vw;
+  }
+  
+  .nav-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 1.8vh;
+    font-weight: 500;
+}
+
+.btn-about {
+    padding: 1.2vh 2.5vw;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6vh;
+    backdrop-filter: blur(5px);
+  }
+
+  .btn-about:hover {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+    transition: 0.3s;
+}
+/* END NAVBAR */
+
+
+/* START BERANDA */
+.hero {
+    height: 100vh; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(11, 15, 19, 0.4), rgba(11, 15, 19, 1));
+    background-image: url('image/background.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-content {
+
+    max-width: 50vw;
+    padding: 4vh 3vw;
+  }
+  
+  .hero-content h1 {
+    font-size: 9vh; 
+    line-height: 1;
+    margin: 2vh 0;
+  }
+
+.hero-content p {
+    font-size: 2.4vh;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 5vh;
+}
+
+/* SEARCH BOX */
+.search-container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1vh;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 40vw;
+    backdrop-filter: blur(10px);
+  }
+
+  .search-container input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 0 1vw;
+    font-size: 2vh;
+    outline: none;
+}
+
+.search-container button {
+    background: #ff4d4d;
+    border: none;
+    padding: 2vh 3vw;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.8vh;
+  }
+  /* END BERANDA */
+  
+
+
+/* SECTION BERIKUTNYA */
+.content-section {
+  height: 100vh; /* Section bawah juga kita buat full screen */
+  padding-top: 10vh;
+  text-align: center;
+}
+
+
+/* --- RESPONSIVE UNTUK TABLET (iPad, Laptop Kecil) --- */
+@media (max-width: 1024px) {
+    .hero-content {
+        max-width: 80vw; /* Lebih lebar sedikit di tablet */
+    }
+
+    .search-container {
+        width: 60vw; /* Box pencarian diperlebar */
+    }
+}
+
+
+/* --- RESPONSIVE UNTUK MOBILE (Smartphone) --- */
+@media (max-width: 768px) {
+    /* Navbar penyesuaian */
+    .navbar {
+        height: 10vh; /* Sedikit lebih pendek di mobile */
+    }
+
+    .nav-links {
+        display: none; /* Sembunyikan menu link di mobile (biasanya diganti hamburger menu) */
+    }
+
+    .logo {
+        font-size: 3vh; /* Ukuran logo tetap proporsional */
+    }
+
+    /* Hero Section penyesuaian */
+    .hero-content {
+        max-width: 90vw; /* Konten hampir memenuhi lebar layar */
+        text-align: center; /* Rata tengah agar lebih seimbang di layar kecil */
+    }
+
+    .hero-content h1 {
+        font-size: 6vh; /* Ukuran font dikecilkan agar tidak menumpuk parah */
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 2vh;
+        margin-bottom: 4vh;
+    }
+
+    /* Search Container penyesuaian */
+    .search-container {
+        width: 100%; /* Full lebar container di mobile */
+        flex-direction: column; /* Input dan tombol bertumpuk */
+        background: transparent; /* Hilangkan background box luar */
+        border: none;
+        padding: 0;
+        gap: 1.5vh;
+    }
+
+    .search-container input {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2vh;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-container button {
+        width: 100%;
+        padding: 2vh;
+        font-size: 2vh;
+    }
+    
+    .btn-about {
+        font-size: 1.4vh;
+        padding: 1vh 4vw;
+    }
+}
+
+
+
+/* --- OPTIONAL: EXTRA SMALL DEVICES (HP Kecil) --- */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 5vh; /* Lebih kecil lagi untuk layar mungil */
+    }
+    
+    .subtitle {
+        font-size: 1.2vh;
+        letter-spacing: 0.4vw;
+    }
+}
