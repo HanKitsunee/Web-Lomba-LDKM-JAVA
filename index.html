@@ -7,24 +7,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- START NAVBAR -->
     <nav class="navbar">
       <div class="container flex-nav">
         <div class="logo">
-          <img class="logo-web" src="image/logo.png" alt="logo" srcset="" />
+          <img class="logo-web" src="image/logo.png" alt="logo" />
         </div>
-        <ul class="nav-links">
+
+        <ul class="nav-links" id="navLinks">
           <li><a href="#home">Beranda</a></li>
           <li><a href="#informasi">Informasi</a></li>
           <li><a href="#peta">Peta Risiko</a></li>
           <li><a href="#edukasi">Edukasi</a></li>
         </ul>
+
         <div class="nav-right">
           <a href="#tentang" class="btn-about">Tentang Kami</a>
         </div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
-    <!-- END NAVBAR -->
 
     <!-- START BERANDA -->
     <section id="home" class="hero">
@@ -161,5 +167,13 @@
       </footer>
     </div>
     <!-- Footer End -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

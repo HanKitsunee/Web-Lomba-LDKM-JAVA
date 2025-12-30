@@ -67,6 +67,48 @@ html{
   transition: 0.3s;
 }
 
+.flex-nav {
+  flex-wrap: nowrap;
+}
+
+/* RESPONSIVE NAVBAR */
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .btn-about {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .logo-web {
+    height: 42px;
+  }
+}
+
+
+/*  MENU */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #1f2937;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+
 /* HERO SECTION */
 .hero {
   min-height: 100vh;
@@ -347,43 +389,33 @@ hr {
 
 /* MOBILE (Layar HP: 1 kolom penuh) */
 @media (max-width: 768px) {
-  .nav-links {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-right {
     display: none;
   }
-  
-  .hero-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    display: none;
+    border-bottom: 1px solid #e5e7eb;
   }
 
-  .card__container {
-    grid-template-columns: 1fr;
-    gap: 9rem 0; /* Jarak vertikal lebih jauh di HP agar animasi tidak menabrak */
-  }
-
-  .card__article {
-    max-width: 100%; /* Kartu mengikuti lebar layar HP */
-  }
-
-  .row-foot {
-    grid-template-columns: 1fr; /* Menjadi satu kolom (tumpuk ke bawah) */
-    text-align: center;
-    gap: 2.5rem;
-  }
-
-  .col-foot p {
-    margin: 1rem auto 0; /* Mengetengahkan teks deskripsi di HP */
-  }
-
-  .col-foot ul {
-    align-items: center; /* Mengetengahkan link navigasi di HP */
-  }
-
-  .col-foot ul li a:hover {
-    padding-left: 0; /* Menghapus efek geser hover agar tetap di tengah */
-    letter-spacing: 1px;
+  .nav-links.active {
+    display: flex;
   }
 }
+
 
 /* EXTRA SMALL MOBILE */
 @media (max-width: 480px) {
