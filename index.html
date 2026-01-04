@@ -1,165 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tanggulangi Bencana</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- START NAVBAR -->
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangguh Bencana - Siap Siaga</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
     <nav class="navbar">
-      <div class="container flex-nav">
-        <div class="logo">
-          <img class="logo-web" src="image/logo.png" alt="logo" srcset="" />
-        </div>
-        <ul class="nav-links">
-          <li><a href="#home">Beranda</a></li>
-          <li><a href="#informasi">Informasi</a></li>
-          <li><a href="#peta">Peta Risiko</a></li>
-          <li><a href="#edukasi">Edukasi</a></li>
-        </ul>
-        <div class="nav-right">
-          <a href="#tentang" class="btn-about">Tentang Kami</a>
-        </div>
-      </div>
-    </nav>
-    <!-- END NAVBAR -->
-
-    <!-- START BERANDA -->
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <!-- KIRI -->
-        <div class="hero-text">
-          <h1>
-            Siap Sebelum Terjadi.<br />
-            Tanggap Saat Terjadi.
-          </h1>
-          <p>
-            Panduan lengkap kesiapsiagaan dan langkah-langkah penyelamatan diri
-            menghadapi bencana.
-          </p>
-
-          <div class="hero-btn">
-            <a href="#" class="btn-primary">Pelajari Bencana</a>
-            <a href="#" class="btn-secondary">Panduan Darurat</a>
-          </div>
-        </div>
-
-        <!-- KANAN -->
-        <div class="hero-img">
-          <img src="image/bencana.png" alt="Ilustrasi Bencana" />
-        </div>
-      </div>
-    </section>
-
-    <!-- END BERANDA -->
-
-    <!-- START BAGIAN INFORMASI BENCANA -->
-    <section id="informasi" class="content-section">
-      <div class="info-container">
-        <h2 id="judul-info">Informasi Bencana</h2>
-        <p id="sub-judul-info">Beberapa informasi terkini terkait bencana.</p>
-
-        <!-- CARD INFORMATION -->
-        <div class="card__container">
-          <article class="card__article">
-            <img
-              src="image/asset/bencana-1.jpg"
-              alt="image"
-              class="card__img"
-            />
-
-            <div class="card__data">
-              <span class="card__description"
-                >Kabupaten Balangan & Banjarbaru, Kalimantan Selatan</span
-              >
-              <h2 class="card__title">Banjir</h2>
-              <a href="#" class="card__button">Read More</a>
+        <div class="container flex-nav">
+            <div class="logo-wrapper">
+                <h2 style="color:#ff6b35; font-weight:800; font-size:1.5rem;">SIGAP<span style="color:#1f2937">BENCANA</span></h2>
             </div>
-          </article>
 
-          <article class="card__article">
-            <img
-              src="image/asset/bencana-2.jpg"
-              alt="image"
-              class="card__img"
-            />
-
-            <div class="card__data">
-              <span class="card__description"
-                >(Tapanuli Tengah & Sibolga) Sumatera Utara</span
-              >
-              <h2 class="card__title">Banjir Bandang & Longsor</h2>
-              <a href="#" class="card__button">Read More</a>
-            </div>
-          </article>
-
-          <article class="card__article">
-            <img
-              src="image/asset/bencana-3.jpg"
-              alt="image"
-              class="card__img"
-            />
-
-            <div class="card__data">
-              <span class="card__description"
-                >Kabupaten Pasaman, Sumatera Barat</span
-              >
-              <h2 class="card__title">Gempa Bumi</h2>
-              <a href="#" class="card__button">Read More</a>
-            </div>
-          </article>
-
-          <article class="card__article">
-            <img
-              src="image/asset/bencana-4.jpg"
-              alt="image"
-              class="card__img"
-            />
-
-            <div class="card__data">
-              <span class="card__description"
-                >Kabupaten/Kota Sukabumi, Jawa Barat</span
-              >
-              <h2 class="card__title">Gempa Bumi</h2>
-              <a href="#" class="card__button">Read More</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- END BAGIAN INFORMASI BENCANA -->
-
-    <!-- Footer Start -->
-    <div class="foot-bg">
-      <footer class="footer">
-        <div class="row-foot">
-          <div class="col-foot">
-            <a href="#home" class="logo-foot">Tanggap Bencana</a>
-            <br /><br />
-            <p>
-              Web ini di buat dengan berutujuan memberikan sebuah edukasi dan
-              serta meningkatkan kesadaran masyarakat akan pentingnya
-              kesiapsiagaan bencana.
-            </p>
-          </div>
-
-          <div class="col-foot">
-            <ul>
-              <li><a href="#home">Beranda</a></li>
-              <li><a href="#informasi">Informasi</a></li>
-              <li><a href="#peta">Peta Risiko</a></li>
-              <li><a href="#edukasi">Edukasi</a></li>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#informasi">Informasi</a></li>
+                <li><a href="#persiapan">Persiapan</a></li>
+                <li><a href="#edukasi">Edukasi</a></li>
+                <li><a href="#" class="btn-about">Tentang Kami</a></li>
             </ul>
-          </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <hr />
-        <p class="copyright">
-          Copyright © 2025 by Kelompok Java, All Rights Reserved.
-        </p>
-      </footer>
-    </div>
-    <!-- Footer End -->
-  </body>
+    </nav>
+
+    <section class="hero-slider" id="home">
+        <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/asset/bencana-3.jpg');">
+            <div class="container hero-content">
+                <span class="badge-alert">Waspada Tanggap Hadapi Bencana</span>
+                <h1>GUNUNG ERUPSI</h1>
+                <a href="#informasi" class="btn-hero">Pelajari Langkahnya</a>
+            </div>
+            <div class="info-bar">
+                <div class="info-item">
+                    <i class="fa-solid fa-volcano"></i>
+                    <div>
+                        <small>Bencana</small>
+                        <strong>Gunung Meletus</strong>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <div>
+                        <small>Penyebab</small>
+                        <strong>Tekanan Magma</strong>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <div>
+                        <small>Status</small>
+                        <strong>Awas (Level IV)</strong>
+                    </div>
+                </div>
+                <div class="info-action">
+                    <a href="#">Cek Peta <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/asset/bencana-1.jpg');">
+            <div class="container hero-content">
+                <span class="badge-alert">Siaga Banjir Tahunan</span>
+                <h1>BANJIR BANDANG</h1>
+                <a href="#informasi" class="btn-hero">Pelajari Langkahnya</a>
+            </div>
+            <div class="info-bar">
+                <div class="info-item">
+                    <i class="fa-solid fa-house-flood-water"></i>
+                    <div><small>Bencana</small><strong>Banjir Luapan</strong></div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    <div><small>Penyebab</small><strong>Curah Hujan</strong></div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <div><small>Status</small><strong>Siaga (Level III)</strong></div>
+                </div>
+                <div class="info-action">
+                    <a href="#">Cek Peta <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/asset/bencana-4.jpg');">
+            <div class="container hero-content">
+                <span class="badge-alert">Informasi Gempa Terkini</span>
+                <h1>GEMPA BUMI</h1>
+                <a href="#informasi" class="btn-hero">Pelajari Langkahnya</a>
+            </div>
+            <div class="info-bar">
+                <div class="info-item">
+                    <i class="fa-solid fa-house-crack"></i>
+                    <div><small>Bencana</small><strong>Gempa Tektonik</strong></div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-arrows-to-circle"></i>
+                    <div><small>Penyebab</small><strong>Gesekan Lempeng</strong></div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <div><small>Status</small><strong>Waspada</strong></div>
+                </div>
+                <div class="info-action">
+                    <a href="#">Cek Peta <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="informasi">
+        <div class="container info-container">
+            <div class="section-header-center">
+                <h2 class="section-title">Informasi Bencana</h2>
+                <p class="section-desc">Beberapa informasi terkini terkait bencana alam yang terjadi di sekitar kita.</p>
+            </div>
+            
+            <div class="card__container">
+                <article class="card__article">
+                    <img src="image/asset/bencana-1.jpg" alt="Banjir" class="card__img" onerror="this.src='https://via.placeholder.com/400x300?text=Banjir'">
+                    <div class="card__data">
+                        <span class="card__description">Kalimantan Selatan</span>
+                        <h2 class="card__title">Banjir Bandang</h2>
+                        <a href="#" class="card__button">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="card__article">
+                    <img src="image/asset/bencana-2.jpg" alt="Longsor" class="card__img" onerror="this.src='https://via.placeholder.com/400x300?text=Longsor'">
+                    <div class="card__data">
+                        <span class="card__description">Sumatera Utara</span>
+                        <h2 class="card__title">Tanah Longsor</h2>
+                        <a href="#" class="card__button">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="card__article">
+                    <img src="image/asset/bencana-3.jpg" alt="Gempa" class="card__img" onerror="this.src='https://via.placeholder.com/400x300?text=Gempa'">
+                    <div class="card__data">
+                        <span class="card__description">Sumatera Barat</span>
+                        <h2 class="card__title">Gempa Bumi</h2>
+                        <a href="#" class="card__button">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="card__article">
+                    <img src="image/asset/bencana-4.jpg" alt="Erupsi" class="card__img" onerror="this.src='https://via.placeholder.com/400x300?text=Erupsi'">
+                    <div class="card__data">
+                        <span class="card__description">Jawa Timur</span>
+                        <h2 class="card__title">Erupsi Semeru</h2>
+                        <a href="#" class="card__button">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="prep-section" id="persiapan">
+        <div class="container">
+            <div class="prep-flex">
+                <div class="prep-image">
+                    <img src="image/peta.jpg" alt="Tas Siaga" onerror="this.src='https://via.placeholder.com/400x400?text=Tas+Siaga'">
+                </div>
+                <div class="prep-content">
+                    <span class="section-subtitle" style="color:#ff6b35; font-weight:600;">Peta Risiko & Persiapan</span>
+                    <h2 class="section-title" style="text-align: left;">Yang Harus Ada di Tas Siaga</h2>
+                    <p class="section-desc" style="text-align: left; margin: 0 0 2rem 0;">Siapkan satu tas ransel khusus yang berisi kebutuhan dasar untuk bertahan hidup selama 3 hari pertama pasca bencana.</p>
+                    
+                    <div class="checklist-grid">
+                        <div class="check-item"><i class="fa-solid fa-circle-check"></i> Air Minum & Makanan</div>
+                        <div class="check-item"><i class="fa-solid fa-circle-check"></i> Obat-obatan Pribadi</div>
+                        <div class="check-item"><i class="fa-solid fa-circle-check"></i> Senter & Baterai</div>
+                        <div class="check-item"><i class="fa-solid fa-circle-check"></i> Dokumen Penting</div>
+                        <div class="check-item"><i class="fa-solid fa-circle-check"></i> Pakaian Ganti</div>
+                        <div class="check-item"><i class="fa-solid fa-circle-check"></i> Uang Tunai</div>
+                    </div>
+                    <a href="#" class="btn-primary">Lihat Checklist Lengkap</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="edu-section" id="edukasi">
+        <div class="container">
+            <div class="section-header-center" style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="section-title">Edukasi & Tips Cepat</h2>
+                <p class="section-desc" style="margin: 0 auto;">Langkah-langkah sederhana yang bisa menyelamatkan nyawa.</p>
+            </div>
+
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fa-solid fa-kit-medical"></i></div>
+                    <h3>Pertolongan Pertama</h3>
+                    <p>Pelajari teknik dasar P3K seperti menangani luka ringan, patah tulang, dan CPR sederhana.</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                    <h3>Nomor Darurat</h3>
+                    <p>Simpan nomor penting: Ambulans (118), Polisi (110), dan Pemadam Kebakaran (113).</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fa-solid fa-radio"></i></div>
+                    <h3>Pantau Informasi</h3>
+                    <p>Selalu pantau informasi resmi dari BMKG atau BPBD melalui radio atau media sosial resmi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="foot-bg">
+        <div class="footer">
+            <div class="row-foot">
+                <div class="col-foot">
+                    <div class="logo-foot">SIGAP BENCANA</div>
+                    <p>Web ini dibuat untuk edukasi kesiapsiagaan bencana.</p>
+                </div>
+                <div class="col-foot">
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#informasi">Informasi</a></li>
+                        <li><a href="#persiapan">Persiapan</a></li>
+                        <li><a href="#edukasi">Edukasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright © 2025 by Kelompok Java.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar Toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Slider Logic
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
 </html>
